@@ -43,7 +43,7 @@ body {
 }
 .Bagian2 .tombol .menu input {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0;
   width: 100%;
   height: 40px;
 }
@@ -335,7 +335,7 @@ body {
 }
 .Bagian3 .tombol .menu input {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0;
   width: 100%;
   height: 40px;
 }
@@ -622,7 +622,7 @@ body {
 }
 .Bagian4 .tombol .menu input {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0;
   width: 100%;
   height: 40px;
 }
@@ -734,10 +734,7 @@ body {
   background-size: cover;
   margin-bottom: 0.5rem;
 }
-.Bagian4 .data4 .container .project .project2 .link {
-  cursor: pointer;
-}
-.Bagian4 .data4 .container .project .project2 .link ul .Project {
+.Bagian4 .data4 .container .project .project2 ul .Project {
   margin-bottom: 0.5rem;
 }
 .Bagian4 .data4 .container .project .project3 {
@@ -982,7 +979,7 @@ body {
 }
 .bagian1 .tombol .menu input {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0;
   width: 100%;
   height: 40px;
 }
