@@ -1,0 +1,419 @@
+
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+$primary-color: rgba(93,94,97,0.8);
+$second-color:rgb(255, 189, 36);
+$third-color: rgb(83, 83, 83);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+
+// Untuk data dan Logo
+.Bagian4 {
+    position: relative;
+    background-color: $primary-color;
+    padding-top: 20px;
+    // height: 120vh;
+    .tombol {
+        display: flex;
+        justify-content: end;
+        width: 90%;
+        // border: 1px solid red;
+        margin: auto;
+        .menu {
+            height: 35px;
+            position: absolute;
+            z-index: 1;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            cursor: pointer;
+            position: relative;
+            input {
+                position: absolute;
+                opacity: 0.2;
+                width: 100%;
+                height: 40px;
+            }
+            span {
+                display: block;
+                width: 47px;
+                height: 5px;
+                background-color: white;
+                border-radius: 40px;
+            }
+            span:nth-child(2) {
+                transform-origin: 0 0;
+            }
+            span:nth-child(4) {
+                transform-origin: 0 0;
+            }
+            input:checked ~ span:nth-child(2) {
+                transform: rotate(40deg);
+            }
+            input:checked ~ span:nth-child(4) {
+                transform: rotate(-40deg);
+            }
+            input:checked ~ span:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    
+    .data4 {
+        height: 125vh;
+        width: 100%;
+        font-size: 2.5rem;
+        overflow: hidden;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            // border: 1px solid blue;
+            box-sizing: border-box;
+            .aboutme {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                h1 {
+                    font-size: 5rem;
+                    margin-bottom: 3rem;
+                    span {
+                        color: yellow;
+                    }
+                }
+                p {
+                    margin-bottom: 3rem;
+                }
+            }
+            .project {
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                justify-content: space-evenly;
+                height: 100vh;
+                ul {
+                    border: 1px solid black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                li {
+                    list-style-type: none;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+                ul {
+                    .Github {
+                        width: 100%;
+                        background-color: black;
+                    }
+                }
+                ul {
+                    .Project {
+                        width: 100%;
+                        background-color: white;
+                        a {
+                            color: black;
+                        }
+                    }
+                }
+                .project1 {
+                    .gambar1 {
+                        width: 600px;
+                        height: 400px;
+                        background-image: url("../img/projects/mendeteksi-wajah.png");
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul {
+                        .Project{
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                    
+                }
+                .project2 {
+                    padding-bottom: 2rem;
+                    .gambar2 {
+                        width: 600px;
+                        height: 400px;
+                        background-image: url("../img/projects/jarak-mobil.png");
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul {
+                        .Project {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                .project3 {
+                    padding-bottom: 2rem;
+                    .gambar3 {
+                        width: 600px;
+                        height: 400px;
+                        background-image: url("../img/projects/navbar.png");
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul {
+                        .Project {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                .project4 {
+                    padding-bottom: 2rem;
+                    .gambar4 {
+                        width: 600px;
+                        height: 400px;
+                        background-image: url("../img/projects/suwit-jepang.png");
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul {
+                        .Project {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+                .project5 {
+                    padding-bottom: 2rem;
+                    .gambar5 {
+                        width: 600px;
+                        height: 400px;
+                        background-image: url("../img/projects/lampu.png");
+                        background-color: white;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        margin-bottom: 0.5rem;
+                    }
+                    ul {
+                        .Project {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+// Bagian Sidebar
+.Sidebar4 {
+    // border: 1px solid red;
+    width: 100%;
+    top: 1px;
+    display: flex;
+    position: absolute;
+    height: 129vh;
+    // left: -1530px;
+    .sidebar3 {
+        right: -1100px;
+        position: relative;
+        width: 50%;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        transition: 1s;
+        background-color: $third-color;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+                list-style-type: none;
+                padding: 20px 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+    .sidebar2 {
+        left: -1100px;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        width: 50%;
+        // border: 1px solid green;
+        align-items: center;
+        transition: 1s;
+        background-color: $primary-color;
+        img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 5px solid yellow;
+
+        }
+    }
+    .sidebar2.slide {
+        left: 0;
+    }
+    .sidebar3.slide2 {
+        right: 0;
+    }
+}
+// .sidebar.slide {
+//     left: 0;
+// }
+
+
+
+// Untuk Tablet 
+@media only screen and (max-width:992px) {
+    .Sidebar4 {
+        height: 125vh;
+        overflow: hidden;
+    }
+    .sidebar3 {
+        ul {
+            font-size: 35px;
+        }
+    }
+    .Bagian4 {
+        overflow: hidden;
+        height: 125vh;
+        .data4 {
+            height: 125vh;
+            .container {
+                // height: 120vh;
+                width: 90%;
+                margin: auto;
+                display: flex;
+                justify-content: flex-start;
+                .aboutme {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .project {
+                    height: 100vh;
+                    .project1, .project2, .project3, .project4, .project5 {
+                        .gambar1, .gambar2, .gambar3, .gambar4, .gambar5 {
+                            width: 300px;
+                            height: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Untuk Mobile
+@media only screen and (max-width:576px) {
+    .Sidebar4 {
+        display: block;
+        height: 125vh;
+        overflow: hidden;
+        .sidebar2 {
+            width: 100%;
+            height: 20%;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .sidebar3 {
+            height: 80%;
+            width: 100%;
+            ul {
+                font-size: 35px;
+                li {
+                    a:hover {
+                        color: yellow;
+                    }
+                }
+            }
+        }
+    }
+    .Bagian4 {
+        height: 125vh;
+        position: relative;
+        .tombol {
+            padding-bottom: 0;
+        }
+        .data4 {
+            height: 125vh;
+            // border: 1px solid salmon;
+            font-size: 1rem;
+            position: relative;
+            .container {
+                display: flex;
+                width: 90%;
+                margin: auto;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                // border: 1px solid blue;
+                // border: 1px solid salmon;
+                .aboutme {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 4rem;
+                        margin-bottom: 2rem;
+                        span {
+                            color: yellow;
+                        }
+                    }
+                    p {
+                        margin-bottom: 1rem;
+                        font-size: 1.5rem;
+                    }
+                }
+                .project {
+                    height: 100vh;
+                    .project1, .project2, .project3, .project4, .project5 {
+                        .gambar1, .gambar2, .gambar3, .gambar4, .gambar5 {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+
+}

@@ -1,0 +1,222 @@
+@import "about";
+@import "contact";
+@import "project";
+
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+$primary-color: rgba(93,94,97,0.8);
+$second-color:rgb(255, 189, 36);
+$third-color: rgb(83, 83, 83);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+    
+}
+body {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    color: white;
+    background-size: cover;
+}
+
+// Untuk data dan Logo
+.bagian1 {
+    position: relative;
+    background-color: $primary-color;
+    padding-top: 20px;
+    .tombol {
+        display: flex;
+        justify-content: end;
+        width: 90%;
+        // border: 1px solid red;
+        margin: auto;
+        .menu {
+            height: 35px;
+            position: absolute;
+            z-index: 1;
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            cursor: pointer;
+            position: relative;
+            input {
+                position: absolute;
+                opacity: 0.2;
+                width: 100%;
+                height: 40px;
+            }
+            span {
+                display: block;
+                width: 47px;
+                height: 5px;
+                background-color: white;
+                border-radius: 40px;
+            }
+            span:nth-child(2) {
+                transform-origin: 0 0;
+            }
+            span:nth-child(4) {
+                transform-origin: 0 0;
+            }
+            input:checked ~ span:nth-child(2) {
+                transform: rotate(40deg);
+            }
+            input:checked ~ span:nth-child(4) {
+                transform: rotate(-40deg);
+            }
+            input:checked ~ span:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        .home {
+            margin-bottom: 4rem;
+            h1 {
+                font-size: 6rem;
+                font-family: 'Lato', sans-serif;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-size: 25px;
+            }
+        }
+        .icon {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-between;
+            a {
+                color: white;
+                i {
+                    cursor: pointer;
+                    font-size: 3rem;
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}
+
+// Bagian Sidebar
+.sidebar {
+    // border: 1px solid red;
+    width: 100%;
+    top: 1px;
+    display: flex;
+    position: absolute;
+    height: 105vh;
+    // left: -1530px;
+    .sidebar3 {
+        right: -1100px;
+        position: relative;
+        width: 50%;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        transition: 1s;
+        background-color: $third-color;
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li {
+                list-style-type: none;
+                padding: 20px 0;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+    .sidebar2 {
+        left: -1100px;
+        justify-content: center;
+        position: relative;
+        display: flex;
+        width: 50%;
+        // border: 1px solid green;
+        align-items: center;
+        transition: 1s;
+        background-color: $primary-color;
+        img {
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            border: 5px solid yellow;
+
+        }
+    }
+    .sidebar2.slide {
+        left: 0;
+    }
+    .sidebar3.slide2 {
+        right: 0;
+    }
+}
+// .sidebar.slide {
+//     left: 0;
+// }
+
+// Untuk Tablet 
+@media only screen and (max-width:992px) {
+    .sidebar {
+        overflow: hidden;
+    }
+    .sidebar3 {
+        ul {
+            font-size: 35px;
+        }
+    }
+}
+
+// Untuk Mobile
+@media only screen and (max-width:576px) {
+    .sidebar {
+        display: block;
+        height: 110vh;
+        overflow: hidden;
+        .sidebar2 {
+            width: 100%;
+            height: 20%;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .sidebar3 {
+            height: 80%;
+            width: 100%;
+            ul {
+                font-size: 35px;
+                li {
+                    a:hover {
+                        color: yellow;
+                    }
+                }
+            }
+        }
+    }
+    .bagian1 {
+        height: 110vh;
+    }
+
+}

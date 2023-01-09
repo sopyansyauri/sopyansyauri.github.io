@@ -1,0 +1,1135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+
+.Bagian2 {
+  position: relative;
+  background-color: rgba(93, 94, 97, 0.8);
+  padding-top: 20px;
+}
+.Bagian2 .tombol {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+}
+.Bagian2 .tombol .menu {
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+.Bagian2 .tombol .menu input {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 40px;
+}
+.Bagian2 .tombol .menu span {
+  display: block;
+  width: 47px;
+  height: 5px;
+  background-color: white;
+  border-radius: 40px;
+}
+.Bagian2 .tombol .menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.Bagian2 .tombol .menu span:nth-child(4) {
+  transform-origin: 0 0;
+}
+.Bagian2 .tombol .menu input:checked ~ span:nth-child(2) {
+  transform: rotate(40deg);
+}
+.Bagian2 .tombol .menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-40deg);
+}
+.Bagian2 .tombol .menu input:checked ~ span:nth-child(3) {
+  display: none;
+}
+.Bagian2 .data2 {
+  height: 100vh;
+  font-size: 2.5rem;
+}
+.Bagian2 .data2 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.Bagian2 .data2 .container .datadiri {
+  display: flex;
+}
+.Bagian2 .data2 .container .datadiri p {
+  margin-left: 4rem;
+}
+.Bagian2 .data2 .container .datadiri img {
+  border-radius: 50%;
+  border: 4px solid yellow;
+}
+.Bagian2 .data2 .container .aboutme h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.Bagian2 .data2 .container .aboutme h1 span {
+  color: yellow;
+}
+.Bagian2 .data2 .container .aboutme p {
+  margin-bottom: 3rem;
+}
+.Bagian2 .data2 .container .datadiri2 {
+  display: flex;
+  margin-top: 3rem;
+}
+.Bagian2 .data2 .container .datadiri2 p {
+  padding-bottom: 3rem;
+}
+.Bagian2 .data2 .container .datadiri2 .datadiri3 {
+  margin-right: 5rem;
+}
+
+.Sidebar2 {
+  width: 100%;
+  top: 1px;
+  display: flex;
+  position: absolute;
+  height: 105vh;
+}
+.Sidebar2 .sidebar3 {
+  right: -1100px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 1s;
+  background-color: rgb(83, 83, 83);
+}
+.Sidebar2 .sidebar3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sidebar2 .sidebar3 ul li {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.Sidebar2 .sidebar3 ul li a {
+  text-decoration: none;
+  color: white;
+}
+.Sidebar2 .sidebar3 ul li a:hover {
+  color: yellow;
+}
+.Sidebar2 .sidebar2 {
+  left: -1100px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  transition: 1s;
+  background-color: rgba(93, 94, 97, 0.8);
+}
+.Sidebar2 .sidebar2 img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+}
+.Sidebar2 .sidebar2.slide {
+  left: 0;
+}
+.Sidebar2 .sidebar3.slide2 {
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .Sidebar2 {
+    overflow: hidden;
+  }
+  .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Bagian2 {
+    overflow: hidden;
+  }
+  .Bagian2 .data2 {
+    height: 100vh;
+  }
+  .Bagian2 .data2 .container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+  }
+  .Bagian2 .data2 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian2 .data2 .container .datadiri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian2 .data2 .container .datadiri p {
+    font-size: 25px;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .Bagian2 .data2 .container .datadiri img {
+    width: 300px;
+    height: 300px;
+  }
+  .Bagian2 .data2 .container .datadiri2 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Sidebar2 {
+    display: block;
+    height: 110vh;
+    overflow: hidden;
+  }
+  .Sidebar2 .sidebar2 {
+    width: 100%;
+    height: 20%;
+  }
+  .Sidebar2 .sidebar2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .Sidebar2 .sidebar3 {
+    height: 80%;
+    width: 100%;
+  }
+  .Sidebar2 .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Sidebar2 .sidebar3 ul li a:hover {
+    color: yellow;
+  }
+  .Bagian2 {
+    height: 110vh;
+    position: relative;
+  }
+  .Bagian2 .tombol {
+    padding-bottom: 0;
+  }
+  .Bagian2 .data2 {
+    height: 110vh;
+    font-size: 1rem;
+  }
+  .Bagian2 .data2 .container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Bagian2 .data2 .container .datadiri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian2 .data2 .container .datadiri p {
+    margin-left: 0;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+  .Bagian2 .data2 .container .datadiri img {
+    border-radius: 50%;
+    border: 4px solid yellow;
+    width: 200px;
+    height: 200px;
+  }
+  .Bagian2 .data2 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian2 .data2 .container .aboutme h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .Bagian2 .data2 .container .aboutme h1 span {
+    color: yellow;
+  }
+  .Bagian2 .data2 .container .aboutme p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .Bagian2 .data2 .container .datadiri2 {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .Bagian2 .data2 .container .datadiri2 p {
+    padding-bottom: 0;
+  }
+  .Bagian2 .data2 .container .datadiri2 .datadiri3 {
+    margin-right: 3px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+
+.Bagian3 {
+  position: relative;
+  background-color: rgba(93, 94, 97, 0.8);
+  padding-top: 20px;
+}
+.Bagian3 .tombol {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+}
+.Bagian3 .tombol .menu {
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+.Bagian3 .tombol .menu input {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 40px;
+}
+.Bagian3 .tombol .menu span {
+  display: block;
+  width: 47px;
+  height: 5px;
+  background-color: white;
+  border-radius: 40px;
+}
+.Bagian3 .tombol .menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.Bagian3 .tombol .menu span:nth-child(4) {
+  transform-origin: 0 0;
+}
+.Bagian3 .tombol .menu input:checked ~ span:nth-child(2) {
+  transform: rotate(40deg);
+}
+.Bagian3 .tombol .menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-40deg);
+}
+.Bagian3 .tombol .menu input:checked ~ span:nth-child(3) {
+  display: none;
+}
+.Bagian3 .data3 {
+  font-size: 2.5rem;
+  height: 110vh;
+}
+.Bagian3 .data3 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.Bagian3 .data3 .container .aboutme h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.Bagian3 .data3 .container .aboutme h1 span {
+  color: yellow;
+}
+.Bagian3 .data3 .container .aboutme p {
+  margin-bottom: 3rem;
+}
+.Bagian3 .data3 .container .contacts {
+  height: 50%;
+}
+.Bagian3 .data3 .container .contacts .email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid white;
+  padding: 3rem;
+  margin: 3rem 0;
+}
+.Bagian3 .data3 .container .contacts .email div {
+  color: yellow;
+}
+.Bagian3 .data3 .container .contacts .address {
+  margin: 3rem 0;
+  display: flex;
+  border: 6px solid white;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.Bagian3 .data3 .container .contacts .address div {
+  color: yellow;
+}
+.Bagian3 .data3 .container .contacts .github {
+  margin: 3rem 0;
+  display: flex;
+  border: 6px solid white;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.Bagian3 .data3 .container .contacts .github div {
+  color: yellow;
+}
+.Bagian3 .data3 .container .contacts .github a {
+  color: white;
+}
+
+.Sidebar3 {
+  width: 100%;
+  top: 1px;
+  display: flex;
+  position: absolute;
+  height: 115vh;
+}
+.Sidebar3 .sidebar3 {
+  right: -1100px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 1s;
+  background-color: rgb(83, 83, 83);
+}
+.Sidebar3 .sidebar3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sidebar3 .sidebar3 ul li {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.Sidebar3 .sidebar3 ul li a {
+  text-decoration: none;
+  color: white;
+}
+.Sidebar3 .sidebar3 ul li a:hover {
+  color: yellow;
+}
+.Sidebar3 .sidebar2 {
+  left: -1100px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  transition: 1s;
+  background-color: rgba(93, 94, 97, 0.8);
+}
+.Sidebar3 .sidebar2 img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+}
+.Sidebar3 .sidebar2.slide {
+  left: 0;
+}
+.Sidebar3 .sidebar3.slide2 {
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .Sidebar3 {
+    overflow: hidden;
+    height: 105vh;
+  }
+  .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Bagian3 {
+    overflow: hidden;
+  }
+  .Bagian3 .data3 {
+    height: 100vh;
+  }
+  .Bagian3 .data3 .container {
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Bagian3 .data3 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian3 .data3 .container .contacts .email {
+    padding: 2rem 1rem;
+  }
+  .Bagian3 .data3 .container .contacts .address {
+    padding: 2rem 1rem;
+  }
+  .Bagian3 .data3 .container .contacts .github {
+    padding: 2rem 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Sidebar3 {
+    display: block;
+    height: 110vh;
+    overflow: hidden;
+  }
+  .Sidebar3 .sidebar2 {
+    width: 100%;
+    height: 20%;
+  }
+  .Sidebar3 .sidebar2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .Sidebar3 .sidebar3 {
+    height: 80%;
+    width: 100%;
+  }
+  .Sidebar3 .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Sidebar3 .sidebar3 ul li a:hover {
+    color: yellow;
+  }
+  .Bagian3 {
+    height: 110vh;
+    position: relative;
+  }
+  .Bagian3 .tombol {
+    padding-bottom: 0;
+  }
+  .Bagian3 .data3 {
+    height: 110vh;
+    font-size: 1rem;
+  }
+  .Bagian3 .data3 .container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Bagian3 .data3 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian3 .data3 .container .aboutme h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  .Bagian3 .data3 .container .aboutme h1 span {
+    color: yellow;
+  }
+  .Bagian3 .data3 .container .aboutme p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .Bagian3 .data3 .container .contacts .email {
+    padding: 2rem 1rem;
+  }
+  .Bagian3 .data3 .container .contacts .address {
+    padding: 2rem 1rem;
+  }
+  .Bagian3 .data3 .container .contacts .github {
+    padding: 2rem 1rem;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+
+.Bagian4 {
+  position: relative;
+  background-color: rgba(93, 94, 97, 0.8);
+  padding-top: 20px;
+}
+.Bagian4 .tombol {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+}
+.Bagian4 .tombol .menu {
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+.Bagian4 .tombol .menu input {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 40px;
+}
+.Bagian4 .tombol .menu span {
+  display: block;
+  width: 47px;
+  height: 5px;
+  background-color: white;
+  border-radius: 40px;
+}
+.Bagian4 .tombol .menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.Bagian4 .tombol .menu span:nth-child(4) {
+  transform-origin: 0 0;
+}
+.Bagian4 .tombol .menu input:checked ~ span:nth-child(2) {
+  transform: rotate(40deg);
+}
+.Bagian4 .tombol .menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-40deg);
+}
+.Bagian4 .tombol .menu input:checked ~ span:nth-child(3) {
+  display: none;
+}
+.Bagian4 .data4 {
+  height: 125vh;
+  width: 100%;
+  font-size: 2.5rem;
+  overflow: hidden;
+}
+.Bagian4 .data4 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.Bagian4 .data4 .container .aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.Bagian4 .data4 .container .aboutme h1 {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.Bagian4 .data4 .container .aboutme h1 span {
+  color: yellow;
+}
+.Bagian4 .data4 .container .aboutme p {
+  margin-bottom: 3rem;
+}
+.Bagian4 .data4 .container .project {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.Bagian4 .data4 .container .project ul {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Bagian4 .data4 .container .project li {
+  list-style-type: none;
+}
+.Bagian4 .data4 .container .project li a {
+  color: white;
+  text-decoration: none;
+}
+.Bagian4 .data4 .container .project ul .Github {
+  width: 100%;
+  background-color: black;
+}
+.Bagian4 .data4 .container .project ul .Project {
+  width: 100%;
+  background-color: white;
+}
+.Bagian4 .data4 .container .project ul .Project a {
+  color: black;
+}
+.Bagian4 .data4 .container .project .project1 .gambar1 {
+  width: 600px;
+  height: 400px;
+  background-image: url("../img/projects/mendeteksi-wajah.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project1 ul .Project {
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project2 {
+  padding-bottom: 2rem;
+}
+.Bagian4 .data4 .container .project .project2 .gambar2 {
+  width: 600px;
+  height: 400px;
+  background-image: url("../img/projects/jarak-mobil.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project2 .link {
+  cursor: pointer;
+}
+.Bagian4 .data4 .container .project .project2 .link ul .Project {
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project3 {
+  padding-bottom: 2rem;
+}
+.Bagian4 .data4 .container .project .project3 .gambar3 {
+  width: 600px;
+  height: 400px;
+  background-image: url("../img/projects/navbar.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project3 ul .Project {
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project4 {
+  padding-bottom: 2rem;
+}
+.Bagian4 .data4 .container .project .project4 .gambar4 {
+  width: 600px;
+  height: 400px;
+  background-image: url("../img/projects/suwit-jepang.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project4 ul .Project {
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project5 {
+  padding-bottom: 2rem;
+}
+.Bagian4 .data4 .container .project .project5 .gambar5 {
+  width: 600px;
+  height: 400px;
+  background-image: url("../img/projects/lampu.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+}
+.Bagian4 .data4 .container .project .project5 ul .Project {
+  margin-bottom: 0.5rem;
+}
+
+.Sidebar4 {
+  width: 100%;
+  top: 1px;
+  display: flex;
+  position: absolute;
+  height: 129vh;
+}
+.Sidebar4 .sidebar3 {
+  right: -1100px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 1s;
+  background-color: rgb(83, 83, 83);
+}
+.Sidebar4 .sidebar3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sidebar4 .sidebar3 ul li {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.Sidebar4 .sidebar3 ul li a {
+  text-decoration: none;
+  color: white;
+}
+.Sidebar4 .sidebar3 ul li a:hover {
+  color: yellow;
+}
+.Sidebar4 .sidebar2 {
+  left: -1100px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  transition: 1s;
+  background-color: rgba(93, 94, 97, 0.8);
+}
+.Sidebar4 .sidebar2 img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+}
+.Sidebar4 .sidebar2.slide {
+  left: 0;
+}
+.Sidebar4 .sidebar3.slide2 {
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .Sidebar4 {
+    height: 125vh;
+    overflow: hidden;
+  }
+  .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Bagian4 {
+    overflow: hidden;
+    height: 125vh;
+  }
+  .Bagian4 .data4 {
+    height: 125vh;
+  }
+  .Bagian4 .data4 .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .Bagian4 .data4 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian4 .data4 .container .project {
+    height: 100vh;
+  }
+  .Bagian4 .data4 .container .project .project1 .gambar1, .Bagian4 .data4 .container .project .project1 .gambar2, .Bagian4 .data4 .container .project .project1 .gambar3, .Bagian4 .data4 .container .project .project1 .gambar4, .Bagian4 .data4 .container .project .project1 .gambar5, .Bagian4 .data4 .container .project .project2 .gambar1, .Bagian4 .data4 .container .project .project2 .gambar2, .Bagian4 .data4 .container .project .project2 .gambar3, .Bagian4 .data4 .container .project .project2 .gambar4, .Bagian4 .data4 .container .project .project2 .gambar5, .Bagian4 .data4 .container .project .project3 .gambar1, .Bagian4 .data4 .container .project .project3 .gambar2, .Bagian4 .data4 .container .project .project3 .gambar3, .Bagian4 .data4 .container .project .project3 .gambar4, .Bagian4 .data4 .container .project .project3 .gambar5, .Bagian4 .data4 .container .project .project4 .gambar1, .Bagian4 .data4 .container .project .project4 .gambar2, .Bagian4 .data4 .container .project .project4 .gambar3, .Bagian4 .data4 .container .project .project4 .gambar4, .Bagian4 .data4 .container .project .project4 .gambar5, .Bagian4 .data4 .container .project .project5 .gambar1, .Bagian4 .data4 .container .project .project5 .gambar2, .Bagian4 .data4 .container .project .project5 .gambar3, .Bagian4 .data4 .container .project .project5 .gambar4, .Bagian4 .data4 .container .project .project5 .gambar5 {
+    width: 300px;
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .Sidebar4 {
+    display: block;
+    height: 125vh;
+    overflow: hidden;
+  }
+  .Sidebar4 .sidebar2 {
+    width: 100%;
+    height: 20%;
+  }
+  .Sidebar4 .sidebar2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .Sidebar4 .sidebar3 {
+    height: 80%;
+    width: 100%;
+  }
+  .Sidebar4 .sidebar3 ul {
+    font-size: 35px;
+  }
+  .Sidebar4 .sidebar3 ul li a:hover {
+    color: yellow;
+  }
+  .Bagian4 {
+    height: 125vh;
+    position: relative;
+  }
+  .Bagian4 .tombol {
+    padding-bottom: 0;
+  }
+  .Bagian4 .data4 {
+    height: 125vh;
+    font-size: 1rem;
+    position: relative;
+  }
+  .Bagian4 .data4 .container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .Bagian4 .data4 .container .aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Bagian4 .data4 .container .aboutme h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  .Bagian4 .data4 .container .aboutme h1 span {
+    color: yellow;
+  }
+  .Bagian4 .data4 .container .aboutme p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .Bagian4 .data4 .container .project {
+    height: 100vh;
+  }
+  .Bagian4 .data4 .container .project .project1 .gambar1, .Bagian4 .data4 .container .project .project1 .gambar2, .Bagian4 .data4 .container .project .project1 .gambar3, .Bagian4 .data4 .container .project .project1 .gambar4, .Bagian4 .data4 .container .project .project1 .gambar5, .Bagian4 .data4 .container .project .project2 .gambar1, .Bagian4 .data4 .container .project .project2 .gambar2, .Bagian4 .data4 .container .project .project2 .gambar3, .Bagian4 .data4 .container .project .project2 .gambar4, .Bagian4 .data4 .container .project .project2 .gambar5, .Bagian4 .data4 .container .project .project3 .gambar1, .Bagian4 .data4 .container .project .project3 .gambar2, .Bagian4 .data4 .container .project .project3 .gambar3, .Bagian4 .data4 .container .project .project3 .gambar4, .Bagian4 .data4 .container .project .project3 .gambar5, .Bagian4 .data4 .container .project .project4 .gambar1, .Bagian4 .data4 .container .project .project4 .gambar2, .Bagian4 .data4 .container .project .project4 .gambar3, .Bagian4 .data4 .container .project .project4 .gambar4, .Bagian4 .data4 .container .project .project4 .gambar5, .Bagian4 .data4 .container .project .project5 .gambar1, .Bagian4 .data4 .container .project .project5 .gambar2, .Bagian4 .data4 .container .project .project5 .gambar3, .Bagian4 .data4 .container .project .project5 .gambar4, .Bagian4 .data4 .container .project .project5 .gambar5 {
+    width: 150px;
+    height: 150px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+}
+
+.bagian1 {
+  position: relative;
+  background-color: rgba(93, 94, 97, 0.8);
+  padding-top: 20px;
+}
+.bagian1 .tombol {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin: auto;
+}
+.bagian1 .tombol .menu {
+  height: 35px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+.bagian1 .tombol .menu input {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 40px;
+}
+.bagian1 .tombol .menu span {
+  display: block;
+  width: 47px;
+  height: 5px;
+  background-color: white;
+  border-radius: 40px;
+}
+.bagian1 .tombol .menu span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.bagian1 .tombol .menu span:nth-child(4) {
+  transform-origin: 0 0;
+}
+.bagian1 .tombol .menu input:checked ~ span:nth-child(2) {
+  transform: rotate(40deg);
+}
+.bagian1 .tombol .menu input:checked ~ span:nth-child(4) {
+  transform: rotate(-40deg);
+}
+.bagian1 .tombol .menu input:checked ~ span:nth-child(3) {
+  display: none;
+}
+.bagian1 .data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.bagian1 .data .home {
+  margin-bottom: 4rem;
+}
+.bagian1 .data .home h1 {
+  font-size: 6rem;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 1rem;
+}
+.bagian1 .data .home p {
+  font-size: 25px;
+}
+.bagian1 .data .icon {
+  display: flex;
+  justify-content: space-between;
+}
+.bagian1 .data .icon a {
+  color: white;
+}
+.bagian1 .data .icon a i {
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0 1rem;
+}
+
+.sidebar {
+  width: 100%;
+  top: 1px;
+  display: flex;
+  position: absolute;
+  height: 105vh;
+}
+.sidebar .sidebar3 {
+  right: -1100px;
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  transition: 1s;
+  background-color: rgb(83, 83, 83);
+}
+.sidebar .sidebar3 ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .sidebar3 ul li {
+  list-style-type: none;
+  padding: 20px 0;
+}
+.sidebar .sidebar3 ul li a {
+  text-decoration: none;
+  color: white;
+}
+.sidebar .sidebar3 ul li a:hover {
+  color: yellow;
+}
+.sidebar .sidebar2 {
+  left: -1100px;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  transition: 1s;
+  background-color: rgba(93, 94, 97, 0.8);
+}
+.sidebar .sidebar2 img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+}
+.sidebar .sidebar2.slide {
+  left: 0;
+}
+.sidebar .sidebar3.slide2 {
+  right: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    overflow: hidden;
+  }
+  .sidebar3 ul {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sidebar {
+    display: block;
+    height: 110vh;
+    overflow: hidden;
+  }
+  .sidebar .sidebar2 {
+    width: 100%;
+    height: 20%;
+  }
+  .sidebar .sidebar2 img {
+    width: 150px;
+    height: 150px;
+  }
+  .sidebar .sidebar3 {
+    height: 80%;
+    width: 100%;
+  }
+  .sidebar .sidebar3 ul {
+    font-size: 35px;
+  }
+  .sidebar .sidebar3 ul li a:hover {
+    color: yellow;
+  }
+  .bagian1 {
+    height: 110vh;
+  }
+}/*# sourceMappingURL=main.css.map */
