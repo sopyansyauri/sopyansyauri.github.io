@@ -89,6 +89,8 @@ body {
 }
 .Bagian2 .data2 .container .datadiri img {
   border-radius: 50%;
+  width: 200px;
+  height: 200px;
   border: 4px solid yellow;
 }
 .Bagian2 .data2 .container .aboutme h1 {
