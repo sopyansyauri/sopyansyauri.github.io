@@ -223,15 +223,15 @@ body {
     height: 20%;
   }
   .Sidebar2 .sidebar2 img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   .Sidebar2 .sidebar3 {
     height: 80%;
     width: 100%;
   }
   .Sidebar2 .sidebar3 ul {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
   .Sidebar2 .sidebar3 ul li a:hover {
     color: yellow;
@@ -262,14 +262,14 @@ body {
   }
   .Bagian2 .data2 .container .datadiri p {
     margin-left: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 1rem 0;
   }
   .Bagian2 .data2 .container .datadiri img {
     border-radius: 50%;
     border: 4px solid yellow;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
   .Bagian2 .data2 .container .aboutme {
     display: flex;
@@ -529,15 +529,15 @@ body {
     height: 20%;
   }
   .Sidebar3 .sidebar2 img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   .Sidebar3 .sidebar3 {
     height: 80%;
     width: 100%;
   }
   .Sidebar3 .sidebar3 ul {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
   .Sidebar3 .sidebar3 ul li a:hover {
     color: yellow;
@@ -578,13 +578,13 @@ body {
     font-size: 1.5rem;
   }
   .Bagian3 .data3 .container .contacts .email {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
   .Bagian3 .data3 .container .contacts .address {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
   .Bagian3 .data3 .container .contacts .github {
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
   }
 }
 * {
@@ -689,7 +689,6 @@ body {
   height: 100vh;
 }
 .Bagian4 .data4 .container .project ul {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -887,15 +886,15 @@ body {
     height: 20%;
   }
   .Sidebar4 .sidebar2 img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   .Sidebar4 .sidebar3 {
     height: 80%;
     width: 100%;
   }
   .Sidebar4 .sidebar3 ul {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
   .Sidebar4 .sidebar3 ul li a:hover {
     color: yellow;
@@ -938,10 +937,16 @@ body {
   }
   .Bagian4 .data4 .container .project {
     height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .Bagian4 .data4 .container .project .project1, .Bagian4 .data4 .container .project .project2, .Bagian4 .data4 .container .project .project3, .Bagian4 .data4 .container .project .project4, .Bagian4 .data4 .container .project .project5 {
+    padding-bottom: 0;
   }
   .Bagian4 .data4 .container .project .project1 .gambar1, .Bagian4 .data4 .container .project .project1 .gambar2, .Bagian4 .data4 .container .project .project1 .gambar3, .Bagian4 .data4 .container .project .project1 .gambar4, .Bagian4 .data4 .container .project .project1 .gambar5, .Bagian4 .data4 .container .project .project2 .gambar1, .Bagian4 .data4 .container .project .project2 .gambar2, .Bagian4 .data4 .container .project .project2 .gambar3, .Bagian4 .data4 .container .project .project2 .gambar4, .Bagian4 .data4 .container .project .project2 .gambar5, .Bagian4 .data4 .container .project .project3 .gambar1, .Bagian4 .data4 .container .project .project3 .gambar2, .Bagian4 .data4 .container .project .project3 .gambar3, .Bagian4 .data4 .container .project .project3 .gambar4, .Bagian4 .data4 .container .project .project3 .gambar5, .Bagian4 .data4 .container .project .project4 .gambar1, .Bagian4 .data4 .container .project .project4 .gambar2, .Bagian4 .data4 .container .project .project4 .gambar3, .Bagian4 .data4 .container .project .project4 .gambar4, .Bagian4 .data4 .container .project .project4 .gambar5, .Bagian4 .data4 .container .project .project5 .gambar1, .Bagian4 .data4 .container .project .project5 .gambar2, .Bagian4 .data4 .container .project .project5 .gambar3, .Bagian4 .data4 .container .project .project5 .gambar4, .Bagian4 .data4 .container .project .project5 .gambar5 {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 }
 * {
@@ -1115,20 +1120,29 @@ body {
     height: 20%;
   }
   .sidebar .sidebar2 img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
   .sidebar .sidebar3 {
     height: 80%;
     width: 100%;
   }
   .sidebar .sidebar3 ul {
-    font-size: 35px;
+    font-size: 1.5rem;
   }
   .sidebar .sidebar3 ul li a:hover {
     color: yellow;
   }
   .bagian1 {
     height: 110vh;
+  }
+  .bagian1 .data .home h1 {
+    font-size: 4.5rem;
+  }
+  .bagian1 .data .home p {
+    font-size: 1.2rem;
+  }
+  .bagian1 .data .icon a i {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=main.css.map */

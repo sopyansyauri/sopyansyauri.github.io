@@ -246,15 +246,15 @@ body {
             width: 100%;
             height: 20%;
             img {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
         }
         .sidebar3 {
             height: 80%;
             width: 100%;
             ul {
-                font-size: 35px;
+                font-size: 1.5rem;
                 li {
                     a:hover {
                         color: yellow;
@@ -288,14 +288,14 @@ body {
                     align-items: center;
                     p {
                         margin-left: 0;
-                        font-size: 1.1rem;
+                        font-size: 1rem;
                         margin: 1rem 0;
                     }
                     img {
                         border-radius: 50%;
                         border: 4px solid yellow;
-                        width: 200px;
-                        height: 200px;
+                        width: 150px;
+                        height: 150px;
                     }
                 }
                 .aboutme {

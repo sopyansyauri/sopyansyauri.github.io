@@ -111,7 +111,7 @@ body {
                 justify-content: space-evenly;
                 height: 100vh;
                 ul {
-                    border: 1px solid black;
+                    // border: 1px solid black;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -348,15 +348,15 @@ body {
             width: 100%;
             height: 20%;
             img {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
             }
         }
         .sidebar3 {
             height: 80%;
             width: 100%;
             ul {
-                font-size: 35px;
+                font-size: 1.5rem;
                 li {
                     a:hover {
                         color: yellow;
@@ -404,10 +404,15 @@ body {
                 }
                 .project {
                     height: 100vh;
+                    display: flex;
+                    justify-content: space-around;
+                    width: 100%;
                     .project1, .project2, .project3, .project4, .project5 {
+                        // border: 1px solid salmon;
+                        padding-bottom: 0;
                         .gambar1, .gambar2, .gambar3, .gambar4, .gambar5 {
-                            width: 150px;
-                            height: 150px;
+                            width: 120px;
+                            height: 120px;
                         }
                     }
                 }
