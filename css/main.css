@@ -923,6 +923,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   .Bagian4 .data4 .container .aboutme h1 {
     font-size: 4rem;
@@ -938,15 +939,26 @@ body {
   .Bagian4 .data4 .container .project {
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     width: 100%;
   }
   .Bagian4 .data4 .container .project .project1, .Bagian4 .data4 .container .project .project2, .Bagian4 .data4 .container .project .project3, .Bagian4 .data4 .container .project .project4, .Bagian4 .data4 .container .project .project5 {
+    padding-right: 0;
     padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
   }
   .Bagian4 .data4 .container .project .project1 .gambar1, .Bagian4 .data4 .container .project .project1 .gambar2, .Bagian4 .data4 .container .project .project1 .gambar3, .Bagian4 .data4 .container .project .project1 .gambar4, .Bagian4 .data4 .container .project .project1 .gambar5, .Bagian4 .data4 .container .project .project2 .gambar1, .Bagian4 .data4 .container .project .project2 .gambar2, .Bagian4 .data4 .container .project .project2 .gambar3, .Bagian4 .data4 .container .project .project2 .gambar4, .Bagian4 .data4 .container .project .project2 .gambar5, .Bagian4 .data4 .container .project .project3 .gambar1, .Bagian4 .data4 .container .project .project3 .gambar2, .Bagian4 .data4 .container .project .project3 .gambar3, .Bagian4 .data4 .container .project .project3 .gambar4, .Bagian4 .data4 .container .project .project3 .gambar5, .Bagian4 .data4 .container .project .project4 .gambar1, .Bagian4 .data4 .container .project .project4 .gambar2, .Bagian4 .data4 .container .project .project4 .gambar3, .Bagian4 .data4 .container .project .project4 .gambar4, .Bagian4 .data4 .container .project .project4 .gambar5, .Bagian4 .data4 .container .project .project5 .gambar1, .Bagian4 .data4 .container .project .project5 .gambar2, .Bagian4 .data4 .container .project .project5 .gambar3, .Bagian4 .data4 .container .project .project5 .gambar4, .Bagian4 .data4 .container .project .project5 .gambar5 {
     width: 120px;
     height: 120px;
+  }
+  .Bagian4 .data4 .container .project .project1 ul, .Bagian4 .data4 .container .project .project2 ul, .Bagian4 .data4 .container .project .project3 ul, .Bagian4 .data4 .container .project .project4 ul, .Bagian4 .data4 .container .project .project5 ul {
+    display: block;
+  }
+  .Bagian4 .data4 .container .project .project1 ul li, .Bagian4 .data4 .container .project .project2 ul li, .Bagian4 .data4 .container .project .project3 ul li, .Bagian4 .data4 .container .project .project4 ul li, .Bagian4 .data4 .container .project .project5 ul li {
+    width: 120px;
   }
 }
 * {

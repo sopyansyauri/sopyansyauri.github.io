@@ -389,6 +389,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    text-align: center;
 
                     h1 {
                         font-size: 4rem;
@@ -405,14 +406,28 @@ body {
                 .project {
                     height: 100vh;
                     display: flex;
-                    justify-content: space-around;
                     width: 100%;
                     .project1, .project2, .project3, .project4, .project5 {
                         // border: 1px solid salmon;
+                        padding-right: 0;
+                        // display: inline;
                         padding-bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 50%;
                         .gambar1, .gambar2, .gambar3, .gambar4, .gambar5 {
                             width: 120px;
                             height: 120px;
+
+                        }
+                        ul {
+                            display: block;
+                            li {
+                                width: 120px;
+                                // border: 1px solid blue;
+                            }
                         }
                     }
                 }
