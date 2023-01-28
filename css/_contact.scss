@@ -1,0 +1,182 @@
+// Color
+$bg: rgba(74, 74, 74, 0.7);
+$font: rgb(240, 46, 65);
+
+* {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  background-color: $bg;
+  background-position: center;
+}
+
+// Navbar
+.contact-navbar {
+  display: flex;
+  justify-content: end;
+  padding: 1.4rem 7%;
+  z-index: 9999;
+  background-color: $bg;
+  .contact-tombol {
+    position: absolute;
+    position: fixed;
+    color: #fff;
+    z-index: 9999;
+    a {
+      color: #fff;
+    }
+  }
+}
+// Akhiran Navbar
+
+// Navbar links
+.contact-navbar-link {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg;
+  position: absolute;
+  z-index: 1;
+  .contact-navbar-gambar {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      border: 3px solid rgba(1, 1, 1, 0.5);
+    }
+  }
+
+  .contact-navbar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: $font;
+      font-size: 2rem;
+      padding: 2rem 7%;
+      text-shadow: 1px 3px rgba(1, 1, 1, 0.6);
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+.contact-navbar-link.muncul {
+  display: flex;
+}
+// Akhiran Navbar links
+
+// Contact data section
+.contact-data {
+  min-height: 100vh;
+  padding: 1.4rem 7%;
+  color: #fff;
+  background-color: $bg;
+  .contact-data-diri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-size: 3rem;
+      margin: 1rem 0;
+      text-shadow: 2px 2px black;
+      span {
+        color: $font;
+      }
+    }
+    .subjudul {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+    .contact-data-diri-lengkap {
+      margin: 5rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .contact-data-diri-lengkap-email {
+        background-color: $font;
+        width: 30rem;
+        margin: 1rem 0;
+        padding: 2rem;
+        border-radius: 3rem;
+        line-height: 2;
+      }
+      .contact-data-diri-lengkap-email:hover {
+        background-color: #fff;
+        color: $font;
+      }
+      .contact-data-diri-lengkap-address {
+        background-color: $font;
+        line-height: 2;
+        border-radius: 3rem;
+        margin: 1rem 0;
+        width: 30rem;
+        padding: 2rem;
+      }
+      .contact-data-diri-lengkap-address:hover {
+        background-color: #fff;
+        color: $font;
+      }
+      .contact-data-diri-lengkap-github {
+        background-color: $font;
+        line-height: 2;
+        border-radius: 3rem;
+        margin: 1rem 0;
+        width: 30rem;
+        padding: 2rem;
+        a {
+          color: #fff;
+        }
+      }
+      .contact-data-diri-lengkap-github:hover {
+        color: $font;
+        background-color: #fff;
+        a {
+          color: $font;
+        }
+      }
+    }
+  }
+}
+// Akhiran contact data section
+
+// Laptop
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// Tablet
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+// Mobile Phone
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}

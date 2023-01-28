@@ -1,0 +1,170 @@
+// Color
+$bg: rgba(74, 74, 74, 0.7);
+$font: rgb(240, 46, 65);
+
+* {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  background-color: $bg;
+  background-position: center;
+}
+
+// Navbar
+.about-navbar {
+  display: flex;
+  justify-content: end;
+  padding: 1.4rem 7%;
+  z-index: 9999;
+  background-color: $bg;
+  .about-tombol {
+    position: absolute;
+    position: fixed;
+    color: #fff;
+    z-index: 9999;
+    a {
+      color: #fff;
+    }
+  }
+}
+// Akhiran Navbar
+
+// Navbar links
+.about-navbar-link {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $bg;
+  position: absolute;
+  z-index: 1;
+  .about-navbar-gambar {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 50%;
+      border: 3px solid rgba(1, 1, 1, 0.5);
+    }
+  }
+
+  .about-navbar-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: $font;
+      font-size: 2rem;
+      padding: 2rem 7%;
+      text-shadow: 1px 3px rgba(1, 1, 1, 0.6);
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+}
+.about-navbar-link.muncul {
+  display: flex;
+}
+// Akhiran Navbar links
+
+// About Data Section
+.about-data {
+  background-color: $bg;
+  min-height: 100vh;
+  padding: 1.4rem 7%;
+  .about-data-diri {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    color: #fff;
+    h1 {
+      margin: 1rem 0;
+      font-size: 3rem;
+      text-shadow: 2px 2px black;
+      span {
+        color: $font;
+      }
+    }
+    p {
+      margin: 1rem 0;
+    }
+    .about-data-subjudul {
+      font-size: 1.5rem;
+    }
+    .about-data-statement {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      .about-data-statement-gambar {
+        margin: 1rem 0;
+        img {
+          border-radius: 50%;
+          width: 15rem;
+          height: 15rem;
+          border: 5px solid rgba(1, 1, 1, 0.5);
+        }
+      }
+      .about-data-statement-isi {
+        margin: 1rem 0;
+        text-align: center;
+      }
+    }
+    .about-data-pengenalan {
+      display: flex;
+      margin: 1rem 0;
+      .about-data-pengenalan-1 {
+        padding: 0 1rem;
+        font-weight: 700;
+      }
+      .about-data-pengenalan-2 {
+        padding: 0 1rem;
+        p {
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+// Akhiran About Data Section
+
+// Laptop
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+// Tablet
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+// Mobile Phone
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
