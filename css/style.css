@@ -156,7 +156,7 @@ body {
     display: none;
   }
   html .about-navbar-link .about-navbar-gambar {
-    height: 50vh;
+    height: 30vh;
     width: 100%;
   }
   html .about-navbar-link .about-navbar-links {
@@ -314,7 +314,7 @@ body {
     display: none;
   }
   html .work-navbar-link .work-navbar-gambar {
-    height: 50vh;
+    height: 30vh;
     width: 100%;
   }
   html .work-navbar-link .work-navbar-links {
@@ -494,7 +494,7 @@ body {
     display: none;
   }
   html .contact-navbar-link .contact-navbar-gambar {
-    height: 50vh;
+    height: 30vh;
     width: 100%;
   }
   html .contact-navbar-link .contact-navbar-links {
@@ -638,7 +638,7 @@ body {
     display: none;
   }
   html .navbar-link .navbar-gambar {
-    height: 50vh;
+    height: 30vh;
     width: 100%;
   }
   html .navbar-link .navbar-links {
