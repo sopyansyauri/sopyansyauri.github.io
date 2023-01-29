@@ -3,14 +3,12 @@ $bg: rgba(74, 74, 74, 0.7);
 $font: rgb(240, 46, 65);
 
 * {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
@@ -21,7 +19,6 @@ body {
   background-color: $bg;
   background-position: center;
 }
-
 // Navbar
 .contact-navbar {
   display: flex;
@@ -48,6 +45,7 @@ body {
   min-height: 100vh;
   background-color: $bg;
   position: absolute;
+  position: fixed;
   z-index: 1;
   .contact-navbar-gambar {
     display: flex;
@@ -99,6 +97,7 @@ body {
       font-size: 3rem;
       margin: 1rem 0;
       text-shadow: 2px 2px black;
+      text-align: center;
       span {
         color: $font;
       }
@@ -106,6 +105,7 @@ body {
     .subjudul {
       font-size: 1.5rem;
       margin: 1rem 0;
+      text-align: center;
     }
     .contact-data-diri-lengkap {
       margin: 5rem 0;
@@ -178,5 +178,17 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+    .contact-navbar-link {
+      flex-wrap: wrap;
+      display: none;
+      .contact-navbar-gambar {
+        height: 50vh;
+        width: 100%;
+      }
+      .contact-navbar-links {
+        height: 50vh;
+        width: 100%;
+      }
+    }
   }
 }

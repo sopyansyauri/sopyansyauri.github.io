@@ -7,14 +7,12 @@ $bg: rgba(74, 74, 74, 0.7);
 $font: rgb(240, 46, 65);
 
 * {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
 }
 
 body {
@@ -30,14 +28,17 @@ body {
 .navbar {
   display: flex;
   justify-content: end;
-  padding: 1.4rem 7%;
   z-index: 9999;
   background-color: $bg;
-  .tombol {
+  padding: 1.4rem 7%;
+  .home-tombol {
     position: absolute;
     position: fixed;
     color: #fff;
     z-index: 9999;
+    a {
+      color: #fff;
+    }
   }
 }
 // Akhiran Navbar
@@ -49,6 +50,7 @@ body {
   min-height: 100vh;
   background-color: $bg;
   position: absolute;
+  position: fixed;
   z-index: 1;
   .navbar-gambar {
     display: flex;
@@ -88,9 +90,11 @@ body {
 
 // Data Section
 .data {
-  z-index: 0;
+  // z-index: 0;
   position: relative;
+  padding: 1.4rem 7%;
   background-color: $bg;
+  min-height: 100vh;
   .data-diri {
     display: flex;
     min-height: 100vh;
@@ -144,5 +148,17 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+    .navbar-link {
+      flex-wrap: wrap;
+      display: none;
+      .navbar-gambar {
+        height: 50vh;
+        width: 100%;
+      }
+      .navbar-links {
+        height: 50vh;
+        width: 100%;
+      }
+    }
   }
 }

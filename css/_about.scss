@@ -48,6 +48,7 @@ body {
   min-height: 100vh;
   background-color: $bg;
   position: absolute;
+  position: fixed;
   z-index: 1;
   .about-navbar-gambar {
     display: flex;
@@ -100,6 +101,7 @@ body {
       margin: 1rem 0;
       font-size: 3rem;
       text-shadow: 2px 2px black;
+      text-align: center;
       span {
         color: $font;
       }
@@ -109,6 +111,7 @@ body {
     }
     .about-data-subjudul {
       font-size: 1.5rem;
+      text-align: center;
     }
     .about-data-statement {
       flex-direction: column;
@@ -166,5 +169,17 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+    .about-navbar-link {
+      flex-wrap: wrap;
+      display: none;
+      .about-navbar-gambar {
+        height: 50vh;
+        width: 100%;
+      }
+      .about-navbar-links {
+        height: 50vh;
+        width: 100%;
+      }
+    }
   }
 }

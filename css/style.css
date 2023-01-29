@@ -39,6 +39,7 @@ body {
   min-height: 100vh;
   background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
+  position: fixed;
   z-index: 1;
 }
 .about-navbar-link .about-navbar-gambar {
@@ -91,6 +92,7 @@ body {
   margin: 1rem 0;
   font-size: 3rem;
   text-shadow: 2px 2px black;
+  text-align: center;
 }
 .about-data .about-data-diri h1 span {
   color: rgb(240, 46, 65);
@@ -100,6 +102,7 @@ body {
 }
 .about-data .about-data-diri .about-data-subjudul {
   font-size: 1.5rem;
+  text-align: center;
 }
 .about-data .about-data-diri .about-data-statement {
   flex-direction: column;
@@ -148,6 +151,18 @@ body {
   html {
     font-size: 55%;
   }
+  html .about-navbar-link {
+    flex-wrap: wrap;
+    display: none;
+  }
+  html .about-navbar-link .about-navbar-gambar {
+    height: 50vh;
+    width: 100%;
+  }
+  html .about-navbar-link .about-navbar-links {
+    height: 50vh;
+    width: 100%;
+  }
 }
 * {
   margin: 0;
@@ -187,8 +202,9 @@ body {
 .work-navbar-link {
   display: none;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(74, 74, 74, 0.7);
+  position: absolute;
   position: fixed;
   z-index: 1;
 }
@@ -241,11 +257,13 @@ body {
   font-size: 3rem;
   text-shadow: 2px 2px black;
   margin: 1rem 0;
+  text-align: center;
 }
 .work-data .work-data-diri h1 span {
   color: rgb(240, 46, 65);
 }
-.work-data .work-data-diri .subujudul {
+.work-data .work-data-diri .subjudul {
+  text-align: center;
   font-size: 1.5rem;
   margin: 1rem 0;
 }
@@ -291,8 +309,20 @@ body {
   html {
     font-size: 55%;
   }
+  html .work-navbar-link {
+    flex-wrap: wrap;
+    display: none;
+  }
+  html .work-navbar-link .work-navbar-gambar {
+    height: 50vh;
+    width: 100%;
+  }
+  html .work-navbar-link .work-navbar-links {
+    height: 50vh;
+    width: 100%;
+  }
 }
-* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -333,6 +363,7 @@ body {
   min-height: 100vh;
   background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
+  position: fixed;
   z-index: 1;
 }
 .contact-navbar-link .contact-navbar-gambar {
@@ -384,6 +415,7 @@ body {
   font-size: 3rem;
   margin: 1rem 0;
   text-shadow: 2px 2px black;
+  text-align: center;
 }
 .contact-data .contact-data-diri h1 span {
   color: rgb(240, 46, 65);
@@ -391,6 +423,7 @@ body {
 .contact-data .contact-data-diri .subjudul {
   font-size: 1.5rem;
   margin: 1rem 0;
+  text-align: center;
 }
 .contact-data .contact-data-diri .contact-data-diri-lengkap {
   margin: 5rem 0;
@@ -456,8 +489,20 @@ body {
   html {
     font-size: 55%;
   }
+  html .contact-navbar-link {
+    flex-wrap: wrap;
+    display: none;
+  }
+  html .contact-navbar-link .contact-navbar-gambar {
+    height: 50vh;
+    width: 100%;
+  }
+  html .contact-navbar-link .contact-navbar-links {
+    height: 50vh;
+    width: 100%;
+  }
 }
-* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -478,15 +523,18 @@ body {
 .navbar {
   display: flex;
   justify-content: end;
-  padding: 1.4rem 7%;
   z-index: 9999;
   background-color: rgba(74, 74, 74, 0.7);
+  padding: 1.4rem 7%;
 }
-.navbar .tombol {
+.navbar .home-tombol {
   position: absolute;
   position: fixed;
   color: #fff;
   z-index: 9999;
+}
+.navbar .home-tombol a {
+  color: #fff;
 }
 
 .navbar-link {
@@ -495,6 +543,7 @@ body {
   min-height: 100vh;
   background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
+  position: fixed;
   z-index: 1;
 }
 .navbar-link .navbar-gambar {
@@ -532,9 +581,10 @@ body {
 }
 
 .data {
-  z-index: 0;
   position: relative;
+  padding: 1.4rem 7%;
   background-color: rgba(74, 74, 74, 0.7);
+  min-height: 100vh;
 }
 .data .data-diri {
   display: flex;
@@ -582,5 +632,17 @@ body {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  html .navbar-link {
+    flex-wrap: wrap;
+    display: none;
+  }
+  html .navbar-link .navbar-gambar {
+    height: 50vh;
+    width: 100%;
+  }
+  html .navbar-link .navbar-links {
+    height: 50vh;
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
