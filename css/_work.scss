@@ -10,6 +10,9 @@ $font: rgb(240, 46, 65);
   border: none;
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-image: url("../img/background.jpg");
@@ -41,18 +44,20 @@ body {
 
 // Navbar links
 .work-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: $bg;
   position: absolute;
   position: fixed;
   z-index: 1;
   .work-navbar-gambar {
     display: flex;
+    transition: all 1s;
     width: 50%;
     justify-content: center;
     align-items: center;
+    transform: translateX(-100%);
+    background-color: rgba(74, 74, 74, 0.8);
     img {
       width: 15rem;
       height: 15rem;
@@ -63,11 +68,14 @@ body {
 
   .work-navbar-links {
     display: flex;
+    transition: all 1s;
     flex-direction: column;
     text-align: center;
     width: 50%;
     align-items: center;
+    transform: translateX(100%);
     justify-content: center;
+    background-color: rgba(116, 116, 116, 0.6);
     a {
       color: $font;
       font-size: 2rem;
@@ -78,10 +86,14 @@ body {
       color: #fff;
     }
   }
+  .work-navbar-gambar.muncul {
+    transform: translateX(0);
+  }
+  .work-navbar-links.muncul {
+    transform: translateX(0);
+  }
 }
-.work-navbar-link.muncul {
-  display: flex;
-}
+
 // Akhiran Navbar links
 
 // Work Data Section
@@ -160,14 +172,16 @@ body {
     font-size: 55%;
     .work-navbar-link {
       flex-wrap: wrap;
-      display: none;
+      display: flex;
       .work-navbar-gambar {
         height: 30vh;
         width: 100%;
       }
       .work-navbar-links {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
+        justify-content: flex-start;
+        padding-top: 2rem;
       }
     }
   }

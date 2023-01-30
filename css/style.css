@@ -34,18 +34,20 @@ body {
 }
 
 .about-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
   position: fixed;
   z-index: 1;
 }
 .about-navbar-link .about-navbar-gambar {
   display: flex;
+  transition: all 1s;
   width: 50%;
   justify-content: center;
+  transform: translateX(-100%);
+  background-color: rgba(74, 74, 74, 0.8);
   align-items: center;
 }
 .about-navbar-link .about-navbar-gambar img {
@@ -56,10 +58,13 @@ body {
 }
 .about-navbar-link .about-navbar-links {
   display: flex;
+  transition: all 1s;
   flex-direction: column;
   text-align: center;
   width: 50%;
   align-items: center;
+  transform: translateX(100%);
+  background-color: rgba(116, 116, 116, 0.6);
   justify-content: center;
 }
 .about-navbar-link .about-navbar-links a {
@@ -71,9 +76,11 @@ body {
 .about-navbar-link .about-navbar-links a:hover {
   color: #fff;
 }
-
-.about-navbar-link.muncul {
-  display: flex;
+.about-navbar-link .about-navbar-gambar.muncul {
+  transform: translateX(0);
+}
+.about-navbar-link .about-navbar-links.muncul {
+  transform: translateX(0);
 }
 
 .about-data {
@@ -153,15 +160,17 @@ body {
   }
   html .about-navbar-link {
     flex-wrap: wrap;
-    display: none;
+    display: flex;
   }
   html .about-navbar-link .about-navbar-gambar {
     height: 30vh;
     width: 100%;
   }
   html .about-navbar-link .about-navbar-links {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
+    justify-content: flex-start;
+    padding-top: 2rem;
   }
 }
 * {
@@ -171,6 +180,10 @@ body {
   outline: none;
   border: none;
   text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -200,19 +213,21 @@ body {
 }
 
 .work-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
   position: fixed;
   z-index: 1;
 }
 .work-navbar-link .work-navbar-gambar {
   display: flex;
+  transition: all 1s;
   width: 50%;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%);
+  background-color: rgba(74, 74, 74, 0.8);
 }
 .work-navbar-link .work-navbar-gambar img {
   width: 15rem;
@@ -222,11 +237,14 @@ body {
 }
 .work-navbar-link .work-navbar-links {
   display: flex;
+  transition: all 1s;
   flex-direction: column;
   text-align: center;
   width: 50%;
   align-items: center;
+  transform: translateX(100%);
   justify-content: center;
+  background-color: rgba(116, 116, 116, 0.6);
 }
 .work-navbar-link .work-navbar-links a {
   color: rgb(240, 46, 65);
@@ -237,9 +255,11 @@ body {
 .work-navbar-link .work-navbar-links a:hover {
   color: #fff;
 }
-
-.work-navbar-link.muncul {
-  display: flex;
+.work-navbar-link .work-navbar-gambar.muncul {
+  transform: translateX(0);
+}
+.work-navbar-link .work-navbar-links.muncul {
+  transform: translateX(0);
 }
 
 .work-data {
@@ -311,15 +331,17 @@ body {
   }
   html .work-navbar-link {
     flex-wrap: wrap;
-    display: none;
+    display: flex;
   }
   html .work-navbar-link .work-navbar-gambar {
     height: 30vh;
     width: 100%;
   }
   html .work-navbar-link .work-navbar-links {
-    height: 50vh;
+    height: 70vh;
     width: 100%;
+    justify-content: flex-start;
+    padding-top: 2rem;
   }
 }
 * {
@@ -358,10 +380,9 @@ body {
 }
 
 .contact-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
   position: fixed;
   z-index: 1;
@@ -370,6 +391,9 @@ body {
   display: flex;
   width: 50%;
   justify-content: center;
+  transition: all 1s;
+  transform: translateX(-100%);
+  background-color: rgba(74, 74, 74, 0.8);
   align-items: center;
 }
 .contact-navbar-link .contact-navbar-gambar img {
@@ -381,9 +405,12 @@ body {
 .contact-navbar-link .contact-navbar-links {
   display: flex;
   flex-direction: column;
+  transition: all 1s;
   text-align: center;
   width: 50%;
   align-items: center;
+  transform: translateX(100%);
+  background-color: rgba(116, 116, 116, 0.6);
   justify-content: center;
 }
 .contact-navbar-link .contact-navbar-links a {
@@ -395,9 +422,11 @@ body {
 .contact-navbar-link .contact-navbar-links a:hover {
   color: #fff;
 }
-
-.contact-navbar-link.muncul {
-  display: flex;
+.contact-navbar-link .contact-navbar-gambar.muncul {
+  transform: translateX(0);
+}
+.contact-navbar-link .contact-navbar-links.muncul {
+  transform: translateX(0);
 }
 
 .contact-data {
@@ -491,15 +520,17 @@ body {
   }
   html .contact-navbar-link {
     flex-wrap: wrap;
-    display: none;
+    display: flex;
   }
   html .contact-navbar-link .contact-navbar-gambar {
     height: 30vh;
     width: 100%;
   }
   html .contact-navbar-link .contact-navbar-links {
-    height: 50vh;
+    height: 70vh;
+    justify-content: flex-start;
     width: 100%;
+    padding-top: 2rem;
   }
 }
 * {
@@ -538,10 +569,9 @@ body {
 }
 
 .navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(74, 74, 74, 0.7);
   position: absolute;
   position: fixed;
   z-index: 1;
@@ -551,6 +581,9 @@ body {
   width: 50%;
   justify-content: center;
   align-items: center;
+  transform: translateX(-100%);
+  transition: all 1s;
+  background-color: rgba(74, 74, 74, 0.8);
 }
 .navbar-link .navbar-gambar img {
   width: 15rem;
@@ -559,12 +592,15 @@ body {
   border: 3px solid rgba(1, 1, 1, 0.5);
 }
 .navbar-link .navbar-links {
+  transition: all 1s;
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 50%;
   align-items: center;
   justify-content: center;
+  transform: translateX(100%);
+  background-color: rgba(116, 116, 116, 0.6);
 }
 .navbar-link .navbar-links a {
   color: rgb(240, 46, 65);
@@ -575,9 +611,11 @@ body {
 .navbar-link .navbar-links a:hover {
   color: #fff;
 }
-
-.navbar-link.muncul {
-  display: flex;
+.navbar-link .navbar-gambar.muncul {
+  transform: translateX(0);
+}
+.navbar-link .navbar-links.muncul {
+  transform: translateX(0);
 }
 
 .data {
@@ -635,14 +673,16 @@ body {
   }
   html .navbar-link {
     flex-wrap: wrap;
-    display: none;
+    display: flex;
   }
   html .navbar-link .navbar-gambar {
     height: 30vh;
     width: 100%;
   }
   html .navbar-link .navbar-links {
-    height: 50vh;
+    height: 70vh;
+    justify-content: flex-start;
     width: 100%;
+    padding-top: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */

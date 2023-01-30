@@ -40,10 +40,9 @@ body {
 
 // Navbar links
 .contact-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: $bg;
   position: absolute;
   position: fixed;
   z-index: 1;
@@ -51,6 +50,9 @@ body {
     display: flex;
     width: 50%;
     justify-content: center;
+    transition: all 1s;
+    transform: translateX(-100%);
+    background-color: rgba(74, 74, 74, 0.8);
     align-items: center;
     img {
       width: 15rem;
@@ -63,9 +65,12 @@ body {
   .contact-navbar-links {
     display: flex;
     flex-direction: column;
+    transition: all 1s;
     text-align: center;
     width: 50%;
     align-items: center;
+    transform: translateX(100%);
+    background-color: rgba(116, 116, 116, 0.6);
     justify-content: center;
     a {
       color: $font;
@@ -77,9 +82,12 @@ body {
       color: #fff;
     }
   }
-}
-.contact-navbar-link.muncul {
-  display: flex;
+  .contact-navbar-gambar.muncul {
+    transform: translateX(0);
+  }
+  .contact-navbar-links.muncul {
+    transform: translateX(0);
+  }
 }
 // Akhiran Navbar links
 
@@ -180,14 +188,16 @@ body {
     font-size: 55%;
     .contact-navbar-link {
       flex-wrap: wrap;
-      display: none;
+      display: flex;
       .contact-navbar-gambar {
         height: 30vh;
         width: 100%;
       }
       .contact-navbar-links {
-        height: 50vh;
+        height: 70vh;
+        justify-content: flex-start;
         width: 100%;
+        padding-top: 2rem;
       }
     }
   }

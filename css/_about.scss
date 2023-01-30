@@ -43,17 +43,19 @@ body {
 
 // Navbar links
 .about-navbar-link {
-  display: none;
+  display: flex;
   width: 100%;
   min-height: 100vh;
-  background-color: $bg;
   position: absolute;
   position: fixed;
   z-index: 1;
   .about-navbar-gambar {
     display: flex;
+    transition: all 1s;
     width: 50%;
     justify-content: center;
+    transform: translateX(-100%);
+    background-color: rgba(74, 74, 74, 0.8);
     align-items: center;
     img {
       width: 15rem;
@@ -65,10 +67,13 @@ body {
 
   .about-navbar-links {
     display: flex;
+    transition: all 1s;
     flex-direction: column;
     text-align: center;
     width: 50%;
     align-items: center;
+    transform: translateX(100%);
+    background-color: rgba(116, 116, 116, 0.6);
     justify-content: center;
     a {
       color: $font;
@@ -80,10 +85,14 @@ body {
       color: #fff;
     }
   }
+  .about-navbar-gambar.muncul {
+    transform: translateX(0);
+  }
+  .about-navbar-links.muncul {
+    transform: translateX(0);
+  }
 }
-.about-navbar-link.muncul {
-  display: flex;
-}
+
 // Akhiran Navbar links
 
 // About Data Section
@@ -171,14 +180,16 @@ body {
     font-size: 55%;
     .about-navbar-link {
       flex-wrap: wrap;
-      display: none;
+      display: flex;
       .about-navbar-gambar {
         height: 30vh;
         width: 100%;
       }
       .about-navbar-links {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
+        justify-content: flex-start;
+        padding-top: 2rem;
       }
     }
   }
