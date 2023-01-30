@@ -49,9 +49,11 @@ body {
   min-height: 100vh;
   position: absolute;
   position: fixed;
+  visibility: hidden;
   z-index: 1;
   .work-navbar-gambar {
     display: flex;
+    visibility: visible;
     transition: all 1s;
     width: 50%;
     justify-content: center;
@@ -68,6 +70,7 @@ body {
 
   .work-navbar-links {
     display: flex;
+    visibility: visible;
     transition: all 1s;
     flex-direction: column;
     text-align: center;

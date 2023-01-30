@@ -51,8 +51,10 @@ body {
   position: absolute;
   position: fixed;
   z-index: 1;
+  visibility: hidden;
   .navbar-gambar {
     display: flex;
+    visibility: visible;
     width: 50%;
     justify-content: center;
     align-items: center;
@@ -69,6 +71,7 @@ body {
 
   .navbar-links {
     transition: all 1s;
+    visibility: visible;
     display: flex;
     flex-direction: column;
     text-align: center;

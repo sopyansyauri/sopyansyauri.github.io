@@ -45,9 +45,11 @@ body {
   min-height: 100vh;
   position: absolute;
   position: fixed;
+  visibility: hidden;
   z-index: 1;
   .contact-navbar-gambar {
     display: flex;
+    visibility: visible;
     width: 50%;
     justify-content: center;
     transition: all 1s;
@@ -64,6 +66,7 @@ body {
 
   .contact-navbar-links {
     display: flex;
+    visibility: visible;
     flex-direction: column;
     transition: all 1s;
     text-align: center;

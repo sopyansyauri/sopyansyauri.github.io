@@ -40,9 +40,11 @@ body {
   position: absolute;
   position: fixed;
   z-index: 1;
+  visibility: hidden;
 }
 .about-navbar-link .about-navbar-gambar {
   display: flex;
+  visibility: visible;
   transition: all 1s;
   width: 50%;
   justify-content: center;
@@ -58,6 +60,7 @@ body {
 }
 .about-navbar-link .about-navbar-links {
   display: flex;
+  visibility: visible;
   transition: all 1s;
   flex-direction: column;
   text-align: center;
@@ -218,10 +221,12 @@ body {
   min-height: 100vh;
   position: absolute;
   position: fixed;
+  visibility: hidden;
   z-index: 1;
 }
 .work-navbar-link .work-navbar-gambar {
   display: flex;
+  visibility: visible;
   transition: all 1s;
   width: 50%;
   justify-content: center;
@@ -237,6 +242,7 @@ body {
 }
 .work-navbar-link .work-navbar-links {
   display: flex;
+  visibility: visible;
   transition: all 1s;
   flex-direction: column;
   text-align: center;
@@ -385,10 +391,12 @@ body {
   min-height: 100vh;
   position: absolute;
   position: fixed;
+  visibility: hidden;
   z-index: 1;
 }
 .contact-navbar-link .contact-navbar-gambar {
   display: flex;
+  visibility: visible;
   width: 50%;
   justify-content: center;
   transition: all 1s;
@@ -404,6 +412,7 @@ body {
 }
 .contact-navbar-link .contact-navbar-links {
   display: flex;
+  visibility: visible;
   flex-direction: column;
   transition: all 1s;
   text-align: center;
@@ -575,9 +584,11 @@ body {
   position: absolute;
   position: fixed;
   z-index: 1;
+  visibility: hidden;
 }
 .navbar-link .navbar-gambar {
   display: flex;
+  visibility: visible;
   width: 50%;
   justify-content: center;
   align-items: center;
@@ -593,6 +604,7 @@ body {
 }
 .navbar-link .navbar-links {
   transition: all 1s;
+  visibility: visible;
   display: flex;
   flex-direction: column;
   text-align: center;
