@@ -12,7 +12,7 @@ menu.addEventListener("click", () => {
 // Akhiran Navbar
 
 // Animasi Ketik
-const textElement = ["Web Developeer, Programmer & Designer"];
+const textElement = ["Web Developer, Programmer & Designer"];
 let count = 0;
 let txtIndex = 0;
 let currentTxt = "";
